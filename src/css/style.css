@@ -1,0 +1,280 @@
+/* ESTILOS DE NAVBAR */
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.link {
+color: gray;
+text-decoration: none;
+position: relative;
+display: flex;
+align-items: center;
+}
+
+.link::after {
+content: "";
+display: block;
+width: 0;
+height: 2px;
+background-color: transparent;
+transition: width 0.3s, background-color 0.3s;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+}
+
+.link.active::after,
+.link:hover::after {
+width: 100%;
+background-color: #d92323;
+}
+
+.link.active span,
+.link:hover span,
+.link.active svg,
+.link:hover svg {
+color: #d92323;
+}
+
+/* ESTILOS DE BOTONES DE VER Y DESCARGAR DOCUMENTOS */
+.linkIconEye {
+  margin-right: 10%;
+  font-size: 130%;
+  color: #f44336;
+}
+
+.linkIconDownload {
+  margin-right: 10%;
+  font-size: 130%;
+  color: #00bcd4;
+}
+
+.linkIconEye:hover {
+  cursor: pointer;
+  color: #e30513;
+  transform: translateY(-25%);
+  transition: 0.3s;
+}
+
+.linkIconDownload:hover {
+  cursor: pointer;
+  color: #0097ab;
+  transform: translateY(-25%);
+  transition: 0.3s;
+}
+
+/* ESTILOS DE BADGES DE ESTADOS*/
+.bd-pending {
+  background-color: #717171 !important;
+}
+
+.bd-progress {
+  background-color: #f6f155 !important;
+}
+
+.bd-appoved {
+  background-color: #f9db4a !important;
+}
+
+.bd-done {
+  background-color: #03a9f4 !important;
+}
+
+.bd-rechazado {
+  background-color: #eb4141 !important;
+}
+
+/* ESTILOS DE PÁGINA DE TABLA DE TAREAS Y CREAR TAREA*/
+/* .button-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.986);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.button-text:hover {
+  background-color: #e30513;
+  color: #fff;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.button-text:hover + svg {
+  opacity: 0;
+} */
+
+/* ESTILOS DE FOOTER */
+.Footer {
+padding: 2rem 0;
+margin-top: 15rem;
+background: #86001b;
+}
+
+.item-listGroup {
+background: #86001b;
+border-color: #86001b;
+}
+
+.ft-1 p {
+text-align: justify;
+color: #fff;
+}
+
+.icono {
+border-radius: 50%;
+}
+
+.icono:hover {
+border-radius: 50%;
+transition: .3s;
+overflow: hidden;
+transform: translateY(-10%);
+}
+
+.ft-2 ul {
+list-style: none;
+padding-left: 0;
+}
+
+.ft-2 ul li {
+padding: 0.35rem 0;
+}
+
+.ft-2 ul a:hover {
+color: red;
+}
+
+/* diseño de las cartas */
+.card-project {
+  max-width: 250px; 
+  margin: auto; 
+  margin-top: 50px;
+}
+
+.card-header {
+  padding: 10px;
+  position: relative;
+  height: 40px;
+}
+
+.status-indicator {
+  position: absolute;
+  width: 30px;
+  top: 25px;
+  left: 40px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.status-indicator__dot {
+  width: fit-content;
+  min-width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #4baf4f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-text {
+  color: #fff; 
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.my-card-hover:hover {
+  /* Cambia el color de fondo y otras propiedades de estilo en hover según sea necesario */
+  background-color: #e4e3e3;
+  cursor: pointer;
+}
+
+
+.card-body {
+  padding: 20px;
+}
+.card-project.card-pendiente .card-header {
+  background-color: #d2d2d2; 
+}
+
+.card-project.card-aprobado .card-header {
+  background-color: #cffac1; 
+}
+
+.card-project.card-rechazado .card-header {
+  background-color: #f6b3b3; 
+}
+
+.card-project.card-en.progreso .card-header {
+  background-color: #f6ec96; 
+}
+
+
+.status-indicator__dot.status-pendiente {
+  background-color: #4b4b4b; 
+}
+
+.status-indicator__dot.status-rechazado {
+  background-color: #e30513; 
+}
+
+.status-indicator__dot.status-en.progreso {
+  background-color: #d6b635;
+}
+
+.status-indicator__dot.status-terminada {
+  background-color: #03a9f4; 
+}
+
+.status-indicator__dot.status-pendiente.de.validar {
+  background-color: #f29c07; 
+}
+
+@media (min-width: 768px) {
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -50px; 
+  }
+
+  .button-container > .btn {
+    margin-left: 10px; 
+  }
+}
+
+@media (max-width: 767px) {
+  .button-container {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: -40px;
+  }
+
+  .button-container > .btn {
+    margin-left: 10px; 
+  }
+}

@@ -1,0 +1,427 @@
+.custom-input-margin {
+  margin-right: 8px;
+}
+body {
+  background: #f5f5f5 !important;
+}
+
+.flex-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.my-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  color: #000;
+  cursor: pointer;
+}
+
+.dropdown-toggle {
+  display: -webkit-box !important;
+}
+
+.dropdown-toggle::after {
+  margin-left: 15px;
+  color: #000;
+  vertical-align: middle;
+}
+
+.my-avatar-dropdown:hover > .dropdown-toggle::after {
+  color: #fff;
+}
+
+.my-avatar-dropdown {
+  width: 70px;
+  background-color: #e5e5e5;
+  align-self: center;
+  padding: 5px;
+  border-radius: 20px;
+  align-self: self-end;
+}
+
+.my-avatar-dropdown:hover {
+  background-color: #d92323;
+}
+
+.dropdown-menu {
+  margin-top: 5px;
+}
+
+.my-modal-header {
+  border-bottom: none !important;
+  background-color: #ffc8c8;
+}
+
+.my-modal-header-PENDIENTE {
+  border-bottom: none !important;
+  background-color: #d2d2d2;
+}
+
+.my-modal-header-APROBADO {
+  border-bottom: none !important;
+  background-color: #cffac1;
+}
+
+.my-modal-header-RECHAZADO {
+  border-bottom: none !important;
+  background-color: #f6b3b3;
+}
+
+.my-modal-header-LISTO {
+  border-bottom: none !important;
+  background-color: #96c4f9;
+}
+.my-modal-header-EN.PROGRESO {
+  border-bottom: none !important;
+  background-color: #f6ec96;
+}
+
+.my-modal-header-PENDIENTE.DE.VALIDAR {
+  border-bottom: none !important;
+  background-color: #fbcd94;
+}
+
+.my-badge-state {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #da241e !important;
+  border-radius: 3px;
+  position: absolute;
+  top: 23px;
+}
+
+.my-badge-state-APROBADO{
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #4baf4f !important;
+  border-radius: 3px;
+  position: absolute;
+  top: 23px;
+}
+
+.my-badge-state-RECHAZADO{
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #da241e !important;
+  border-radius: 3px;
+  position: absolute;
+  top: 23px;
+}
+
+.my-badge-state-PENDIENTE{
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #4b4b4b !important;
+  border-radius: 3px;
+  position: absolute;
+  top: 23px;
+}
+
+.my-badge-state-PENDIENTE.DE.VALIDAR{
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #d6690f !important;
+  border-radius: 3px;
+  position: absolute;
+  top: 23px;
+}
+
+.my-badge-state-LISTO{
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #0059ff !important;
+  border-radius: 3px;
+  position: absolute;
+  top: 23px;
+}
+
+.my-badge-state-EN.PROGRESO{
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #d6b635 !important;
+  border-radius: 3px;
+  position: absolute;
+  top: 23px;
+}
+
+.my-modal-button {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #da241e !important;
+  border: 1px solid #da241e;
+  border-radius: 3px;
+}
+
+.my-modal-button-approve {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #4baf4f !important;
+  border: 1px solid #4baf4f;
+  border-radius: 3px;
+}
+
+.my-modal-button-task {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #d6b635 !important;
+  border: 1px solid #d6b635;
+  border-radius: 3px;
+}
+
+.my-modal-button-pending {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #4b4b4b !important;
+  border: 1px solid #4b4b4b;
+  border-radius: 3px;
+}
+
+.my-modal-button-PENDIENTE {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #4b4b4b !important;
+  border: 1px solid #4b4b4b;
+  border-radius: 3px;
+}
+
+.my-modal-button-RECHAZADO {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #da241e !important;
+  border: 1px solid #da241e;
+  border-radius: 3px;
+}
+
+.my-modal-button-LISTO {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #0059ff !important;
+  border: 1px solid #0059ff;
+  border-radius: 3px;
+}
+
+.table-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+
+.my-modal-button-EN.PROGRESO {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #d6b635 !important;
+  border: 1px solid #d6b635;
+  border-radius: 3px;
+}
+
+.my-modal-button-PENDIENTE.DE.VALIDAR {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #d6690f !important;
+  border: 1px solid #d6690f;
+  border-radius: 3px;
+}
+
+
+
+.hover-row:hover {
+  background-color: #ffffff;
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+}
+
+.hover-row:hover td {
+  background-color: #cccccc;
+}
+
+.my-badge-pending-state {
+  background-color: #4b4b4b !important;
+}
+
+.my-badge-appoved-state {
+  background-color: #4baf4f !important;
+}
+
+.my-badge-progress-state {
+  background-color: #d6b635 !important;
+}
+
+.my-badge-rejected-state {
+  background-color: #e30513 !important;
+}
+
+.my-badge-pendingvalide-state {
+  background-color: #d6690f !important;
+}
+
+.my-badge-done-state {
+  background-color: #03a9f4 !important;
+}
+
+.my-badge-career-software {
+  background-color: #2596be !important;
+}
+.my-badge-career-graphic {
+  background-color: #ffb900 !important;
+}
+.my-badge-career-tourism {
+  background-color: #00a99d !important;
+}
+.my-badge-career-fashions {
+  background-color: #ab4bde !important;
+}
+.my-badge-career-financial {
+  background-color: #8e0606 !important;
+}
+.my-badge-career-logistics {
+  background-color: #f44336 !important;
+}
+
+.my-projects-table {
+  max-height: 300px !important;
+  overflow-y: auto !important;
+}
+
+.my-dropdown-project-filter, .my-btn-create-project {
+  background-color: #b6b6b6 !important;
+  border: none;
+}
+
+.my-dropdown-project-filter::after {
+  display: none !important;
+}
+
+.my-dropdown-filter-active {
+  background-color: #fff !important;
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.my-dropdown-filter-desactive {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.border-info-component {
+  border-right: 1px solid #ccc;
+}
+
+@media (max-width: 767px) {
+  .border-info-component {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+}
+
+
+.label-as-h2 {
+  font-size: "1.5rem";
+  font-weight: "bold";
+  margin-bottom: "0.5rem";
+}
+
+.my-header-project-PENDIENTE  {
+  border-bottom: none !important;
+  background-color: #d2d2d2;
+}
+
+.my-header-project-APROBADO  {
+  border-bottom: none !important;
+  background-color: #cffac1;
+}
+
+
+.my-header-project-validated  {
+  border-bottom: none !important;
+  background-color: #f5f6ab;
+}
+
+.my-header-project-EN.PROGRESO  {
+  border-bottom: none !important;
+  background-color: #f6ec96;
+}
+
+.my-header-project-RECHAZADO  {
+  border-bottom: none !important;
+  background-color: #f6b3b3;
+}
+
+.my-header-project-PENDIENTE.DE.VALIDAR  {
+  border-bottom: none !important;
+  background-color: #f6d396;
+}
+
+.my-header-project-finalized  {
+  border-bottom: none !important;
+  background-color: #78d5ff;
+}
+
+.my-badge-state-PENDIENTE {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #4b4b4b !important;
+  border-radius: 3px;
+  position: absolute;
+  top: 15px;
+}
+.my-badge-state-validated {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #f9db4a !important;
+  border-radius: 3px;
+  position: absolute;
+  top: 15px;
+}
+.my-badge-state-inprogress {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #c5d845 !important;
+  border-radius: 3px;
+  position: absolute;
+  top: 15px;
+}
+.my-badge-state-finalized {
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  background: #03a9f4 !important;
+  border-radius: 3px;
+  position: absolute;
+  top: 15px;
+}
+
+/* SelectTypeTags.css */
+
+.select-type-tag {
+  opacity: 0.5; 
+}
+.select-type-tag.selected {
+  opacity: 1; 
+}
+
